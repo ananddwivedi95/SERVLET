@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Here</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: #2d2c2d;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            width: 350px;
+            background: #deddde;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+        input, button {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+        }
+        input {
+            background: white;
+            color: black;
+            border: 1px solid #2c2b2c;
+        }
+        button {
+            background: #008080;
+            color: white;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .success-message {
+            background: #008080;
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Register Here</h2>
+        <div class="success-message">Successfully registered !!</div>
+        <form action="RegisterServlet" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="password" name="password" placeholder="Your Password" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <button type="submit">OK</button>
+        </form>
+    </div>
+</body>
+</html>
